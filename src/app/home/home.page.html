@@ -7,6 +7,21 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
+  <ion-item>
+    <ion-label position="floating">Phone number</ion-label>
+    <ion-input type="tel"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Text</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Repeat count: </ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Indexing message: </ion-label>
+    <ion-checkbox color="primary" checked="true"></ion-checkbox>
+  </ion-item>
+  <ion-button expand="full" shape="round">Send Message</ion-button>
 </ion-content>
