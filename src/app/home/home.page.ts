@@ -38,10 +38,12 @@ export class HomePage implements OnInit {
         const indexing = this.indexing.checked;
 
         for (let i = 0; i < repeat; i++) {
+            let textTmp = text;
             if (indexing) {
                 defaultNumber++;
+                textTmp += defaultNumber;
             }
-            this.smsService.sendMessage(phoneNumber, text + defaultNumber);
+            this.smsService.sendMessage(phoneNumber, textTmp);
             await this.delay(delay);
         }
         this.toastService.showToast('Messages sended', 2000);
