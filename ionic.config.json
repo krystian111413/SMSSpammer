@@ -1,5 +1,7 @@
 {
   "name": "sms_spammer",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
