@@ -9,19 +9,19 @@
 <ion-content padding>
   <ion-item>
     <ion-label position="floating">Phone number</ion-label>
-    <ion-input type="tel"></ion-input>
+    <ion-input #phone type="tel"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="floating">Text</ion-label>
-    <ion-input type="text"></ion-input>
+    <ion-input #text type="text"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label>Repeat count: </ion-label>
-    <ion-input type="number"></ion-input>
+    <ion-input #repeatCount type="number"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label>Indexing message: </ion-label>
-    <ion-checkbox color="primary" checked="true"></ion-checkbox>
+    <ion-checkbox #indexing color="primary" checked="true"></ion-checkbox>
   </ion-item>
-  <ion-button expand="full" shape="round">Send Message</ion-button>
+  <ion-button expand="full" shape="round" (click)="onSendMessage()">Send Message</ion-button>
 </ion-content>
