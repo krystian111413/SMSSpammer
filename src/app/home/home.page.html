@@ -1,27 +1,31 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>
+            SMS Spammer
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-item>
-    <ion-label position="floating">Phone number</ion-label>
-    <ion-input #phone type="tel"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="floating">Text</ion-label>
-    <ion-input #text type="text"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label>Repeat count: </ion-label>
-    <ion-input #repeatCount type="number"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label>Indexing message: </ion-label>
-    <ion-checkbox #indexing color="primary" checked="true"></ion-checkbox>
-  </ion-item>
-  <ion-button expand="full" shape="round" (click)="onSendMessage()">Send Message</ion-button>
+    <ion-item>
+        <ion-label position="floating">Phone number:</ion-label>
+        <ion-input #phone type="tel"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating">Text:</ion-label>
+        <ion-input #text type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label>Repeat count:</ion-label>
+        <ion-input #repeatCount type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating">Delay between sending message in [ms]:</ion-label>
+        <ion-input #delaySendingMessage type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label>Indexing message:</ion-label>
+        <ion-checkbox #indexing color="primary" checked="true"></ion-checkbox>
+    </ion-item>
+    <ion-button expand="full" shape="round" (click)="onSendMessage()">Send Message</ion-button>
 </ion-content>
